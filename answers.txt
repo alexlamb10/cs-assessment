@@ -1,0 +1,22 @@
+function       ||         Array        ||     Runtime 
+                    extraLargeArray        1.0712126 s 
+                       largeArray          8.4588 ms
+doublerInsert          mediumArray         182.9 microseconds
+                       smallArray          94.6 microseconds
+                       tinyArray           39.6 microseconds
+---------------------------------------------------------------
+                    extraLargeArray        4.2844 ms
+                       largeArray          575.7 microseconds
+doublerAppend          mediumArray         160.6 microseconds
+                       smallArray          264.1 microseconds
+                       tinyArray           101.2 microseconds
+---------------------------------------------------------------
+
+
+I would say that the doublerInsert function is O(n) because it seems to increase in time at a pretty 
+constant rate as the size of the array increases. It may not be a perfect line but it is mostly 
+constant. Whereas I would say that doublerAppend is O(log n) because it starts off by 
+running slower than doublerInsert but as the size of array increases to larger numbers it eventually 
+starts to run faster with no signs that it is going to increase again. This being said it looks to me 
+like the doublerAppend scales better for large amounts of data.
+
